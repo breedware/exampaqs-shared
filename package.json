@@ -9,8 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build"
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/node": "^20.0.0", 
