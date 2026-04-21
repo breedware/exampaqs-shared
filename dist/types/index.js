@@ -1,6 +1,7 @@
 export * from './theme.types.js';
 export * from './firestore.table.js';
 export * from './model.types.js';
+export * from './backups.firestore.js';
 export var AccountTypes;
 (function (AccountTypes) {
     AccountTypes["STUDENT"] = "student";
