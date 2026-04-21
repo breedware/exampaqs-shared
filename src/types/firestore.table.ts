@@ -1,0 +1,61 @@
+export enum FIREBASETABLE {
+  ACCOUNTS = 'accounts',
+  TICKETS = 'tickets',
+  UNMARKEDATTENDANCES = 'unmarkedattendances',
+  EMAILS = 'emails',
+  SMSMESSENGER = 'smsmessenger',
+  NOTIFICATIONS = 'appnotifications',
+  PLATFORMADMIN = 'platformadministrators',
+  SCHOOLADMIN = 'schooladministrators',
+  PARENTS = 'parents',
+  PROPRIETORS = 'proprietors',
+  SCHOOLSTAFFS = 'schoolstaffs',
+  STUDENTS = 'students',
+  TERMLYENROLMENTS = 'termlyenrolments',
+  SCHOOLS = 'schools',
+  SCHOOLLOCATIONS = 'schoollocations',
+  SCHOOLCLASSROOMS = 'schoolclassrooms',
+  ACADEMICSESSIONS = 'academicsessions',
+  BANKACCOUNTS = 'bankaccounts',
+  GENERALCONFIGS = 'generalconfigs',
+  PAYMENTS = 'payments',
+  SCHOOLVEHICLES = 'schoolvehicles',
+  VEHICLEONBOARDINGS = 'vehicleonboardings',
+  SCHOOLEVENTS = 'schoolevents',
+  ATTENDANCES = 'attendances',
+  STUDENTPICKERS = 'studentpickers',
+  VEHICLETRIPS = 'vehicletrips',
+  VEHICLEASSIGNMENTS = 'vehicleassignments',
+  STUDENTTRIPS = 'studenttrips',
+  PROCESSEDTRANSACTIONS = 'processedtransactions',
+  PAYMENTADVICES = 'paymentadvices',
+
+  // TRIGGERS
+  SCHOOLBANKPROGRESS = 'schoolbankprogress',
+  TRANSACTIONNOTIFICATIONS = 'transactionnotifications',
+  PENDINGSTUDENTDVA = 'pendingstudentdva',
+}
+
+export enum APIMethods {
+    userRegistration = 'userRegistration',
+    updateUserProfile = 'updateUserProfile',
+    secureRegistration = 'secureRegistration',
+    saveAttendanceData = 'saveAttendanceData',
+    saveFinancialData = 'saveFinancialData',
+    saveSchoolData = 'saveSchoolData',
+    resetAccountPassword = 'resetAccountPassword',
+    getServerTime = 'getServerTime',
+    fetchBanks = 'fetchBanks',
+    confirmBankAccount = 'confirmBankAccount',
+    saveSubReceiverAccount = 'saveSubAccount',
+    fetchData = 'dbFetcher',
+    createPaystackCustomer = 'createPaystackCustomer',
+}
+
+export enum FETCHMethods {
+  ANALYTICS = 'func_fetch_school_analytics',
+  TERMLY_DEBTORS = 'func_fetch_term_debtors',
+  SCHOOLUNMARKEDATTENDANCES = 'func_fetch_unmarked_attendance',
+  USERUNMARKEDATTENDANCES = 'func_fetch_user_unmarked_attendance',
+  ADVICE_DEBTORS = 'func_fetch_advice_debtors'
+}

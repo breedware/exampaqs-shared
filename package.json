@@ -1,0 +1,19 @@
+{
+  "name": "@exampaqs/shared",
+  "version": "1.0.0",
+  "type": "module", 
+  "description": "Shared methods and types for exampaqs code base",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0", 
+    "typescript": "^5.0.0"
+  }
+}
