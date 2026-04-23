@@ -13,6 +13,7 @@ export var FIREBASETABLE;
     FIREBASETABLE["SCHOOLSTAFFS"] = "schoolstaffs";
     FIREBASETABLE["STUDENTS"] = "students";
     FIREBASETABLE["TERMLYENROLMENTS"] = "termlyenrolments";
+    FIREBASETABLE["SCHOOLFEEPAYMENTS"] = "schoolfeepayments";
     FIREBASETABLE["SCHOOLS"] = "schools";
     FIREBASETABLE["SCHOOLLOCATIONS"] = "schoollocations";
     FIREBASETABLE["SCHOOLCLASSROOMS"] = "schoolclassrooms";

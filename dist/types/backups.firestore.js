@@ -15,6 +15,11 @@ export const backupDbs = {
         whereKeys: 'accountId',
         backupDb: FIREBASETABLE.ACCOUNTS
     },
+    feePayments: {
+        dbLabel: 'currentFeePayment',
+        whereKeys: 'paymentId',
+        backupDb: FIREBASETABLE.SCHOOLFEEPAYMENTS
+    },
     childAccounts: {
         dbLabel: 'currentChild',
         whereKeys: 'accountId',
