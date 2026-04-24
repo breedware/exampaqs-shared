@@ -31,6 +31,7 @@ export var FIREBASETABLE;
     FIREBASETABLE["STUDENTTRIPS"] = "studenttrips";
     FIREBASETABLE["PROCESSEDTRANSACTIONS"] = "processedtransactions";
     FIREBASETABLE["PAYMENTADVICES"] = "paymentadvices";
+    FIREBASETABLE["QUEUEDTRANSFERS"] = "queuedtransfers";
     // TRIGGERS
     FIREBASETABLE["SCHOOLBANKPROGRESS"] = "schoolbankprogress";
     FIREBASETABLE["TRANSACTIONNOTIFICATIONS"] = "transactionnotifications";

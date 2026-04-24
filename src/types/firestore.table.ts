@@ -30,6 +30,7 @@ export enum FIREBASETABLE {
   STUDENTTRIPS = 'studenttrips',
   PROCESSEDTRANSACTIONS = 'processedtransactions',
   PAYMENTADVICES = 'paymentadvices',
+  QUEUEDTRANSFERS = 'queuedtransfers',
 
   // TRIGGERS
   SCHOOLBANKPROGRESS = 'schoolbankprogress',

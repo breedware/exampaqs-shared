@@ -30,6 +30,7 @@ export declare enum FIREBASETABLE {
     STUDENTTRIPS = "studenttrips",
     PROCESSEDTRANSACTIONS = "processedtransactions",
     PAYMENTADVICES = "paymentadvices",
+    QUEUEDTRANSFERS = "queuedtransfers",
     SCHOOLBANKPROGRESS = "schoolbankprogress",
     TRANSACTIONNOTIFICATIONS = "transactionnotifications",
     PENDINGSTUDENTDVA = "pendingstudentdva"
