@@ -36,6 +36,7 @@ export var FIREBASETABLE;
     FIREBASETABLE["SCHOOLBANKPROGRESS"] = "schoolbankprogress";
     FIREBASETABLE["TRANSACTIONNOTIFICATIONS"] = "transactionnotifications";
     FIREBASETABLE["PENDINGSTUDENTDVA"] = "pendingstudentdva";
+    FIREBASETABLE["SCHEDULEDSMS"] = "scheduledsms";
 })(FIREBASETABLE || (FIREBASETABLE = {}));
 export var APIMethods;
 (function (APIMethods) {
@@ -52,6 +53,8 @@ export var APIMethods;
     APIMethods["saveSubReceiverAccount"] = "saveSubAccount";
     APIMethods["fetchData"] = "dbFetcher";
     APIMethods["createPaystackCustomer"] = "createPaystackCustomer";
+    APIMethods["initateTransaction"] = "initateTransaction";
+    APIMethods["initiateFundTransfer"] = "initiateFundTransfer";
 })(APIMethods || (APIMethods = {}));
 export var FETCHMethods;
 (function (FETCHMethods) {
@@ -60,5 +63,7 @@ export var FETCHMethods;
     FETCHMethods["SCHOOLUNMARKEDATTENDANCES"] = "func_fetch_unmarked_attendance";
     FETCHMethods["USERUNMARKEDATTENDANCES"] = "func_fetch_user_unmarked_attendance";
     FETCHMethods["ADVICE_DEBTORS"] = "func_fetch_advice_debtors";
+    FETCHMethods["FETCH_SCHOOL_ATTENDANCE"] = "func_fetch_school_attendance";
+    FETCHMethods["FETCH_SCHOOL_PTA"] = "func_fetch_school_pta";
 })(FETCHMethods || (FETCHMethods = {}));
 //# sourceMappingURL=firestore.table.js.map

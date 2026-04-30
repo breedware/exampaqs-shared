@@ -33,7 +33,8 @@ export declare enum FIREBASETABLE {
     QUEUEDTRANSFERS = "queuedtransfers",
     SCHOOLBANKPROGRESS = "schoolbankprogress",
     TRANSACTIONNOTIFICATIONS = "transactionnotifications",
-    PENDINGSTUDENTDVA = "pendingstudentdva"
+    PENDINGSTUDENTDVA = "pendingstudentdva",
+    SCHEDULEDSMS = "scheduledsms"
 }
 export declare enum APIMethods {
     userRegistration = "userRegistration",
@@ -48,13 +49,17 @@ export declare enum APIMethods {
     confirmBankAccount = "confirmBankAccount",
     saveSubReceiverAccount = "saveSubAccount",
     fetchData = "dbFetcher",
-    createPaystackCustomer = "createPaystackCustomer"
+    createPaystackCustomer = "createPaystackCustomer",
+    initateTransaction = "initateTransaction",
+    initiateFundTransfer = "initiateFundTransfer"
 }
 export declare enum FETCHMethods {
     ANALYTICS = "func_fetch_school_analytics",
     TERMLY_DEBTORS = "func_fetch_term_debtors",
     SCHOOLUNMARKEDATTENDANCES = "func_fetch_unmarked_attendance",
     USERUNMARKEDATTENDANCES = "func_fetch_user_unmarked_attendance",
-    ADVICE_DEBTORS = "func_fetch_advice_debtors"
+    ADVICE_DEBTORS = "func_fetch_advice_debtors",
+    FETCH_SCHOOL_ATTENDANCE = "func_fetch_school_attendance",
+    FETCH_SCHOOL_PTA = "func_fetch_school_pta"
 }
 //# sourceMappingURL=firestore.table.d.ts.map

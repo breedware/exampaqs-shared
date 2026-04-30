@@ -36,6 +36,7 @@ export enum FIREBASETABLE {
   SCHOOLBANKPROGRESS = 'schoolbankprogress',
   TRANSACTIONNOTIFICATIONS = 'transactionnotifications',
   PENDINGSTUDENTDVA = 'pendingstudentdva',
+  SCHEDULEDSMS = 'scheduledsms',
 }
 
 export enum APIMethods {
@@ -52,6 +53,8 @@ export enum APIMethods {
     saveSubReceiverAccount = 'saveSubAccount',
     fetchData = 'dbFetcher',
     createPaystackCustomer = 'createPaystackCustomer',
+    initateTransaction = 'initateTransaction',
+    initiateFundTransfer = 'initiateFundTransfer',
 }
 
 export enum FETCHMethods {
@@ -59,5 +62,7 @@ export enum FETCHMethods {
   TERMLY_DEBTORS = 'func_fetch_term_debtors',
   SCHOOLUNMARKEDATTENDANCES = 'func_fetch_unmarked_attendance',
   USERUNMARKEDATTENDANCES = 'func_fetch_user_unmarked_attendance',
-  ADVICE_DEBTORS = 'func_fetch_advice_debtors'
+  ADVICE_DEBTORS = 'func_fetch_advice_debtors',
+  FETCH_SCHOOL_ATTENDANCE = 'func_fetch_school_attendance',
+  FETCH_SCHOOL_PTA = 'func_fetch_school_pta'
 }

@@ -1,6 +1,6 @@
 {
   "name": "@breedware/exampaqs-shared",
-  "version": "1.1.0",
+  "version": "1.1.7",
   "type": "module", 
   "description": "Shared methods and types for exampaqs code base",
   "main": "dist/index.js",
@@ -11,6 +11,9 @@
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "@breedware/global-utility": ">=2.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0", 

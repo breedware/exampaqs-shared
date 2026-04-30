@@ -1,3 +1,4 @@
+import { BulkSMSPayload, SingleSMSPayload } from "@breedware/global-utility";
 export interface StudenRegFormData {
     firstName: string;
     lastName: string;
@@ -622,18 +623,6 @@ export interface TransferInitPayload {
 export interface TransCompletePayload {
     tranfer_code: string;
 }
-export interface BulkSMSPayload {
-    username: string;
-    phoneNumbers: string[];
-    message: string;
-    senderId: string;
-}
-export interface SingleSMSPayload {
-    username: string;
-    to: string;
-    message: string;
-    senderId: string;
-}
 export interface BankAccountCreationPayload {
     notificationAccountReference: string;
     accountName: string;
@@ -677,6 +666,20 @@ export interface SchoolAnalytics {
     dailyAttendanceList: DailyAttendance[];
     termlyEnrolmentList: TermlyEnrolment[];
     outstandingFees: number | null;
+}
+export interface AttendanceFormData {
+    accountId: number;
+    registerId?: number;
+    termId: number;
+    status: 'present' | 'absent' | 'excused' | 'late' | 'sign_out';
+    longitude: number;
+    latitude: number;
+    metadata?: Record<string, any>;
+    pickupId?: number;
+    droffOffId?: number;
+    eventId?: number;
+    action: 'attendance';
+    sms?: BulkSMSPayload | SingleSMSPayload;
 }
 export {};
 //# sourceMappingURL=model.types.d.ts.map
