@@ -32,6 +32,10 @@ export var FIREBASETABLE;
     FIREBASETABLE["PROCESSEDTRANSACTIONS"] = "processedtransactions";
     FIREBASETABLE["PAYMENTADVICES"] = "paymentadvices";
     FIREBASETABLE["QUEUEDTRANSFERS"] = "queuedtransfers";
+    FIREBASETABLE["SUGGESTIONBOX"] = "suggestionbox";
+    FIREBASETABLE["PENDINGCLASSASSIGNMENTS"] = "pendingclassassignments";
+    FIREBASETABLE["ONBOARDINGDATA"] = "onboardingdata";
+    FIREBASETABLE["ADMISSIONREQUESTS"] = "admissionrequests";
     // TRIGGERS
     FIREBASETABLE["SCHOOLBANKPROGRESS"] = "schoolbankprogress";
     FIREBASETABLE["TRANSACTIONNOTIFICATIONS"] = "transactionnotifications";
@@ -65,5 +69,7 @@ export var FETCHMethods;
     FETCHMethods["ADVICE_DEBTORS"] = "func_fetch_advice_debtors";
     FETCHMethods["FETCH_SCHOOL_ATTENDANCE"] = "func_fetch_school_attendance";
     FETCHMethods["FETCH_SCHOOL_PTA"] = "func_fetch_school_pta";
+    FETCHMethods["FETCH_PAID_INSTALMENTS"] = "func_fetch_paid_instalments";
+    FETCHMethods["FETCH_CLASSROOM_TEACHERS"] = "func_fetch_class_teachers";
 })(FETCHMethods || (FETCHMethods = {}));
 //# sourceMappingURL=firestore.table.js.map

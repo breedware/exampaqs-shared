@@ -35,6 +35,12 @@ export var GENOTYPE;
     GENOTYPE["AC"] = "AC";
     GENOTYPE["SC"] = "SC";
 })(GENOTYPE || (GENOTYPE = {}));
+export var SuggestionStatus;
+(function (SuggestionStatus) {
+    SuggestionStatus["PENDING"] = "pending";
+    SuggestionStatus["RESOLVED"] = "resolved";
+    SuggestionStatus["REJECTED"] = "rejected";
+})(SuggestionStatus || (SuggestionStatus = {}));
 export var TERM_STATUS;
 (function (TERM_STATUS) {
     TERM_STATUS["ACTIVE"] = "active";

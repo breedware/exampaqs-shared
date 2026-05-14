@@ -1,8 +1,14 @@
 import { BulkSMSPayload, SingleSMSPayload } from "@breedware/global-utility";
 export interface StudenRegFormData {
+    accountId?: number;
+    reference?: string;
     firstName: string;
     lastName: string;
     middleName?: string;
+    preferredLocationId?: number;
+    preferredLocation?: string;
+    preferredClassId?: number;
+    preferredClass?: string;
     phoneNumber: string;
     schoolId: number;
     state: string;
@@ -21,7 +27,19 @@ export interface StudenRegFormData {
         allergies?: string[];
         physicalChallenges?: string[];
     };
-    admissionNumber: string;
+    admissionNumber?: string;
+    platformNumber?: string;
+    customerCode?: string;
+    admissionDate?: string;
+    dedicatedVirtualAccount?: string;
+    vdabank?: string;
+    vdaDisplayName?: string;
+    vdaAssignmentCode?: string;
+    termId: number;
+    classId?: number;
+    classroomI?: number;
+    parentAccountId?: number;
+    relationship: string;
 }
 export interface StudentSupRegFormData {
     accountId: number;
@@ -221,11 +239,37 @@ export declare enum GENOTYPE {
     AC = "AC",
     SC = "SC"
 }
-interface StudentContact {
+export declare enum SuggestionStatus {
+    PENDING = "pending",
+    RESOLVED = "resolved",
+    REJECTED = "rejected"
+}
+export interface SuggestionBox {
+    reference?: string;
+    senderId: number;
+    studentId: number;
+    category: 'complaint' | 'suggestion' | 'feedback';
+    parent: UserAccount;
+    student: Student;
+    schoolId: number;
+    content: string;
+    timestamp: number;
+    status: SuggestionStatus;
+    adminNotes?: string;
+}
+export interface StudentContact {
     relationship: string;
     displayName: string;
     photoUrl: string | null;
     phoneNumber: string | null;
+    pickerId: number;
+    reference?: string;
+    studentId: number;
+    address: string;
+    createdAt: number;
+    updatedAt: number;
+    isActive: boolean;
+    createdById: number;
 }
 interface DropOff extends StudentContact {
     dropOffId: number;
@@ -680,6 +724,22 @@ export interface AttendanceFormData {
     eventId?: number;
     action: 'attendance';
     sms?: BulkSMSPayload | SingleSMSPayload;
+}
+export interface PendingClassAssignment {
+    studentId: number;
+    displayName: string;
+    photoUrl: string;
+    admissionNumber: string;
+    admissionYear: string;
+    preferedClassId: number;
+    reference?: string;
+    preferedLocationId: number;
+    currentTermId: number;
+    lastClassId: number | null;
+    lastClass: string | null;
+    lastClassroomId: number | null;
+    lastClassroom: string | null;
+    accountId: number;
 }
 export {};
 //# sourceMappingURL=model.types.d.ts.map

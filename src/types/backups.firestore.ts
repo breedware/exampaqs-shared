@@ -98,7 +98,7 @@ export const backupDbs = {
     },
     students: {
         dbLabel: 'currentStudent',
-        whereKeys: 'accountId',
+        whereKeys: 'admissionId',
         backupDb: FIREBASETABLE.STUDENTS
     },
     
