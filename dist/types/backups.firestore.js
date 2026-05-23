@@ -32,7 +32,7 @@ export const backupDbs = {
     },
     bankAccounts: {
         dbLabel: 'currentBankAccount',
-        whereKeys: 'bankId',
+        whereKeys: 'schoolId',
         backupDb: FIREBASETABLE.BANKACCOUNTS
     },
     parents: {
