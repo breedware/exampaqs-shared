@@ -45,6 +45,11 @@ export const backupDbs = {
         whereKeys: 'paymentId',
         backupDb: FIREBASETABLE.PAYMENTS
     },
+    cancelledPayments: {
+        dbLabel: 'currentCancelledPayment',
+        whereKeys: 'cancellationId',
+        backupDb: FIREBASETABLE.CANCELLEDPAYMENTS
+    },
     platformAdmins: {
         dbLabel: 'currentAdministrator',
         whereKeys: 'accountId',

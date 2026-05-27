@@ -183,6 +183,8 @@ export interface SchoolStaff {
     reference?: string;
     schoolId: number;
     isActive: boolean;
+    adminLocationIds?: Array<number>;
+    locationId?: number;
     isAttendanceKeeper: boolean;
     role: string;
     duty: string;
@@ -321,6 +323,21 @@ export interface UnmarkedAttendance {
         isStaff: boolean;
     }[];
 }
+export interface CancelledPayment {
+    reference?: string;
+    instalmentId: number;
+    accountId: number;
+    adviceId: number;
+    title: string;
+    amount: number;
+    reason: string;
+    date: string;
+    recorder: string;
+    recorderId: number;
+    schoolId: number;
+    sessionId: number;
+    termId: number;
+}
 export interface StudentTermlyEnrolment {
     enrolmentId: number;
     termId: number;
@@ -329,20 +346,14 @@ export interface StudentTermlyEnrolment {
     sessionId: number;
     schoolId: number;
     schoolName: string;
+    locationId: number;
     schoolLogoUrl: string;
     reference?: string;
     studentId: number;
     createdAt: number;
     updatedAt: number;
-    enrolmentPaymentIds: number[];
-    enrolmentOutstandings: {
-        item: string;
-        amount: number;
-        deadline: number;
-        isMandatory: boolean;
-        adviceId: number;
-        instalmentId: number;
-    }[];
+    admissionYear: string;
+    admissionNumber: string;
     accountId: number;
     displayName: string;
     photoUrl: string;
@@ -681,6 +692,51 @@ export declare enum PAYMENT_PURPOSE {
     SCHOOL_SMS = "school sms",
     ACCOUNT_SMS = "account sms",
     SCHOOL_FEE = "school fee"
+}
+export interface FeePayment {
+    reference?: string;
+    paymentId: number;
+    transactionReference: string;
+    paymentDate: number;
+    amount: number;
+    narration: string;
+    items: Array<{
+        item: string;
+        amount: number;
+    }>;
+    parents: Array<any>;
+    studentId: number;
+    studentName: string;
+    accountId: number;
+    sessionId: number;
+    sessionName: string;
+    termName: string;
+    termId: number;
+    schoolId: number;
+    schoolName: string;
+}
+export interface PaymentFormData {
+    transactionReference: string;
+    amount: number;
+    narration: string;
+    accountId: number;
+    advicedInstalments?: Array<{
+        instalmentId: number;
+        enrolmentId: number;
+        amount: number;
+        bankId?: number;
+    }>;
+    bankId?: number;
+    isFromWallet?: boolean;
+    transactionCharge?: number;
+    unadvicedPayments?: {
+        bankId: number;
+        items: Array<{
+            enrolmentId: number;
+            narration: string;
+            amount: number;
+        }>;
+    };
 }
 interface UpcomingEvent {
     id: number;

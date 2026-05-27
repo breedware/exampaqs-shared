@@ -35,6 +35,7 @@ export declare enum FIREBASETABLE {
     PENDINGCLASSASSIGNMENTS = "pendingclassassignments",
     ONBOARDINGDATA = "onboardingdata",
     ADMISSIONREQUESTS = "admissionrequests",
+    CANCELLEDPAYMENTS = "cancelledpayments",
     SCHOOLBANKPROGRESS = "schoolbankprogress",
     TRANSACTIONNOTIFICATIONS = "transactionnotifications",
     PENDINGSTUDENTDVA = "pendingstudentdva",
@@ -66,6 +67,7 @@ export declare enum FETCHMethods {
     FETCH_SCHOOL_ATTENDANCE = "func_fetch_school_attendance",
     FETCH_SCHOOL_PTA = "func_fetch_school_pta",
     FETCH_PAID_INSTALMENTS = "func_fetch_paid_instalments",
-    FETCH_CLASSROOM_TEACHERS = "func_fetch_class_teachers"
+    FETCH_CLASSROOM_TEACHERS = "func_fetch_class_teachers",
+    FETCH_STUDENT_OUTSTANDINGS = "func_fetch_student_outstandings"
 }
 //# sourceMappingURL=firestore.table.d.ts.map

@@ -40,6 +40,11 @@ export declare const backupDbs: {
         whereKeys: string;
         backupDb: FIREBASETABLE;
     };
+    cancelledPayments: {
+        dbLabel: string;
+        whereKeys: string;
+        backupDb: FIREBASETABLE;
+    };
     platformAdmins: {
         dbLabel: string;
         whereKeys: string;

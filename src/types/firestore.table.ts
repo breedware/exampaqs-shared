@@ -35,6 +35,7 @@ export enum FIREBASETABLE {
   PENDINGCLASSASSIGNMENTS = 'pendingclassassignments',
   ONBOARDINGDATA = 'onboardingdata',
   ADMISSIONREQUESTS = 'admissionrequests',
+  CANCELLEDPAYMENTS = 'cancelledpayments',
 
   // TRIGGERS
   SCHOOLBANKPROGRESS = 'schoolbankprogress',
@@ -71,4 +72,5 @@ export enum FETCHMethods {
   FETCH_SCHOOL_PTA = 'func_fetch_school_pta',
   FETCH_PAID_INSTALMENTS = 'func_fetch_paid_instalments',
   FETCH_CLASSROOM_TEACHERS = 'func_fetch_class_teachers',
+  FETCH_STUDENT_OUTSTANDINGS = 'func_fetch_student_outstandings'
 }
