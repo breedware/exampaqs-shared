@@ -36,6 +36,8 @@ export enum FIREBASETABLE {
   ONBOARDINGDATA = 'onboardingdata',
   ADMISSIONREQUESTS = 'admissionrequests',
   CANCELLEDPAYMENTS = 'cancelledpayments',
+  VIDEORESOURCES = 'videoresources',
+  YOUTUBEAUTHS = 'youtubeauths',
 
   // TRIGGERS
   SCHOOLBANKPROGRESS = 'schoolbankprogress',
@@ -60,6 +62,7 @@ export enum APIMethods {
     createPaystackCustomer = 'createPaystackCustomer',
     initateTransaction = 'initateTransaction',
     initiateFundTransfer = 'initiateFundTransfer',
+    youtubeUploadAuth = 'youtubeUploadAuth'
 }
 
 export enum FETCHMethods {

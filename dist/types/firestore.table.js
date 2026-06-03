@@ -37,6 +37,8 @@ export var FIREBASETABLE;
     FIREBASETABLE["ONBOARDINGDATA"] = "onboardingdata";
     FIREBASETABLE["ADMISSIONREQUESTS"] = "admissionrequests";
     FIREBASETABLE["CANCELLEDPAYMENTS"] = "cancelledpayments";
+    FIREBASETABLE["VIDEORESOURCES"] = "videoresources";
+    FIREBASETABLE["YOUTUBEAUTHS"] = "youtubeauths";
     // TRIGGERS
     FIREBASETABLE["SCHOOLBANKPROGRESS"] = "schoolbankprogress";
     FIREBASETABLE["TRANSACTIONNOTIFICATIONS"] = "transactionnotifications";
@@ -60,6 +62,7 @@ export var APIMethods;
     APIMethods["createPaystackCustomer"] = "createPaystackCustomer";
     APIMethods["initateTransaction"] = "initateTransaction";
     APIMethods["initiateFundTransfer"] = "initiateFundTransfer";
+    APIMethods["youtubeUploadAuth"] = "youtubeUploadAuth";
 })(APIMethods || (APIMethods = {}));
 export var FETCHMethods;
 (function (FETCHMethods) {

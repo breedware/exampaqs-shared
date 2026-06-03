@@ -36,6 +36,8 @@ export declare enum FIREBASETABLE {
     ONBOARDINGDATA = "onboardingdata",
     ADMISSIONREQUESTS = "admissionrequests",
     CANCELLEDPAYMENTS = "cancelledpayments",
+    VIDEORESOURCES = "videoresources",
+    YOUTUBEAUTHS = "youtubeauths",
     SCHOOLBANKPROGRESS = "schoolbankprogress",
     TRANSACTIONNOTIFICATIONS = "transactionnotifications",
     PENDINGSTUDENTDVA = "pendingstudentdva",
@@ -56,7 +58,8 @@ export declare enum APIMethods {
     fetchData = "dbFetcher",
     createPaystackCustomer = "createPaystackCustomer",
     initateTransaction = "initateTransaction",
-    initiateFundTransfer = "initiateFundTransfer"
+    initiateFundTransfer = "initiateFundTransfer",
+    youtubeUploadAuth = "youtubeUploadAuth"
 }
 export declare enum FETCHMethods {
     ANALYTICS = "func_fetch_school_analytics",

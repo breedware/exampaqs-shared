@@ -159,7 +159,8 @@ export interface PlatformAdministrator {
     accountId: number;
     role: string;
     reference?: string;
-    isActiive: boolean;
+    isActive: boolean;
+    username: string;
 }
 
 
@@ -426,6 +427,7 @@ export interface School {
     proprietorId: number;
     displayName: string;
     logoUrl: string;
+    isVerified: boolean;
     logoPath: string;
     platformNumber: string;
     smsBalance: number;
@@ -443,6 +445,29 @@ export interface School {
         updatedAt: number;
         verificationStatus: 'pending' | 'rejected' | 'verified'
     }
+}
+
+export interface VideoResource {
+    reference?: string;
+    filePath?: string;
+    videoId: string;              // Crucial: The unique YouTube Video ID (e.g., 'dQw4w9WgXcQ')
+    title: string;
+    description: string;
+    isAdvert: boolean;
+    groups: string[];
+    duration: string;        // Highly recommended: ISO 8601 string from YouTube (e.g., 'PT15M33S')
+    publishedAt: string;     // ISO timestamp of when it went live on YouTube
+    thumbnail: {
+        photoUrl: string;
+        photoPath: string;
+    };       // URL to the preferred resolution thumbnail
+    category: string;        // YouTube Category ID or mapped string name
+    youtubeUrl: string;      // Computed URL: `https://www.youtube.com/watch?v=${id}`
+    author: {
+        name: string;
+        avatar: string;
+    };
+    privacyStatus: 'public' | 'unlisted' | 'private'; 
 }
 
 export interface SchoolLocation {
@@ -509,21 +534,26 @@ export interface BankAccount {
     isMain: boolean;
 }
 
+
 export interface Payment {
+    locationId: number;
+    locationName: string;
     reference?: string;
+    payerName: string;
     paymentId: number;
+    accountId: number;
     instalmentId: number;
     enrolmentId: number;
     transactionReference: string;
     paymentDate: number;
+    bankName: string;
+    schoolName: string;
     amount: number;
     bankId: number;
     purpose: string;
     termId: number;
-    studentId: number;
     schoolId: number;
-    sessionId: number;
-    studentName: string;
+    narration: string;
 }
 
 
@@ -677,9 +707,10 @@ export interface AppNotification {
   timestamp: number;
   isRead: boolean;
   category: NotificationCategory;
-  priority: NotificationPriority;
+  priority?: NotificationPriority;
   actionUrl?: string; // e.g., /receipts?reference=TX123
   metadata?: Record<string, any>;
+  isToSchool: boolean;
 }
 
 export interface GeneralConfig {
@@ -796,6 +827,7 @@ export interface FeePayment {
 export interface PaymentFormData {
     transactionReference: string;
     amount: number;
+    schoolId: number;
     narration: string;
     accountId: number;
     advicedInstalments?: Array<{
@@ -848,6 +880,15 @@ export interface SchoolAnalytics {
   dailyAttendanceList: DailyAttendance[];
   termlyEnrolmentList: TermlyEnrolment[]; 
   outstandingFees: number | null; 
+}
+
+export interface AdminAnalytics {
+  schoolCount: number;
+  smsBalance: number;
+  studentCount: number;
+  parentCount: number;
+  proprietorCount: number;
+  dailyAdoptions: {date: string; count: number}[];
 }
 
 export interface AttendanceFormData {
