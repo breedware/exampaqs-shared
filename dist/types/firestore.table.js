@@ -12,7 +12,7 @@ export var FIREBASETABLE;
     FIREBASETABLE["SUBJECTGRADINGS"] = "subjectgradings";
     FIREBASETABLE["QUESTIONITEMS"] = "questionitems";
     FIREBASETABLE["SUBJECTTOPICS"] = "subjecttopics";
-    FIREBASETABLE["TERMLYGRADINGS"] = "termlygradings";
+    FIREBASETABLE["SCHOOLGRADINGS"] = "schoolgrading";
     // STUDENTSUBJECTATTENDANCES = 'studentsubjectattendances',
     FIREBASETABLE["LESSONNOTES"] = "lessonnotes";
     // STUDENTREPORTS = 'studentreports',

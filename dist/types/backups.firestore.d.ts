@@ -135,7 +135,7 @@ export declare const backupDbs: {
         whereKeys: string;
         backupDb: FIREBASETABLE;
     };
-    termlyGradings: {
+    schoolGrading: {
         dbLabel: string;
         whereKeys: string;
         backupDb: FIREBASETABLE;

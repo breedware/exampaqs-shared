@@ -8,7 +8,7 @@ export declare enum FIREBASETABLE {
     SUBJECTGRADINGS = "subjectgradings",
     QUESTIONITEMS = "questionitems",
     SUBJECTTOPICS = "subjecttopics",
-    TERMLYGRADINGS = "termlygradings",
+    SCHOOLGRADINGS = "schoolgrading",
     LESSONNOTES = "lessonnotes",
     ASSESSMENTRESULTS = "assessmentresults",
     UNMARKEDATTENDANCES = "unmarkedattendances",

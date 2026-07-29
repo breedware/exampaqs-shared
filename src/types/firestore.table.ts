@@ -12,7 +12,7 @@ export enum FIREBASETABLE {
   SUBJECTGRADINGS = 'subjectgradings',
   QUESTIONITEMS = 'questionitems',
   SUBJECTTOPICS = 'subjecttopics',
-  TERMLYGRADINGS = 'termlygradings',
+  SCHOOLGRADINGS = 'schoolgrading',
   // STUDENTSUBJECTATTENDANCES = 'studentsubjectattendances',
   LESSONNOTES = 'lessonnotes',
   // STUDENTREPORTS = 'studentreports',

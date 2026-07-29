@@ -130,36 +130,21 @@ export const backupDbs = {
         whereKeys: 'termId',
         backupDb: FIREBASETABLE.SCHOOLTIMETABLE
     },
-    // teachersTimetable: {
-    //     dbLabel: 'currentTeachersTimetable',
-    //     whereKeys: ['slotId', 'teacherId'],
-    //     backupDb: FIREBASETABLE.TEACHERSTIMETABLE
-    // },
     lessonNote: {
         dbLabel: 'currentNote',
         whereKeys: 'noteId',
         backupDb: FIREBASETABLE.LESSONNOTES
     },
-    // subjectAttendance: {
-    //     dbLabel: 'currentSubjectAttendance',
-    //     whereKeys: 'attendanceId',
-    //     backupDb: FIREBASETABLE.STUDENTSUBJECTATTENDANCES
-    // },
     assessment: {
         dbLabel: 'currentAssessment',
         whereKeys: 'assessmentId',
         backupDb: FIREBASETABLE.ASSESSMENTS
     },
-    termlyGradings: {
-        dbLabel: 'currentTermlyGrading',
-        whereKeys: 'termId',
-        backupDb: FIREBASETABLE.TERMLYGRADINGS,
+    schoolGrading: {
+        dbLabel: 'currentGrading',
+        whereKeys: 'gradeId',
+        backupDb: FIREBASETABLE.SCHOOLGRADINGS,
     },
-    // assessmentResults: {
-    //     dbLabel: 'currentAssessmentResult',
-    //     whereKeys: ['studentId', 'assessmentId'],
-    //     backupDb: FIREBASETABLE.ASSESSMENTRESULTS
-    // },
     question: {
         dbLabel: 'currentQuestion',
         whereKeys: 'questionId',
@@ -172,7 +157,7 @@ export const backupDbs = {
     },
     subjectGrading: {
         dbLabel: 'currentSubjectGrading',
-        whereKeys: ['subjectId', 'classId', 'gradeId'],
+        whereKeys: ['subjectId', 'classId', 'gradeId', 'termId'],
         backupDb: FIREBASETABLE.SUBJECTGRADINGS
     },
     subjectTopic: {
