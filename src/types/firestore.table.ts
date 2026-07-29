@@ -1,6 +1,25 @@
 export enum FIREBASETABLE {
   ACCOUNTS = 'accounts',
   TICKETS = 'tickets',
+  // Academics tables
+
+  SCHOOLTIMETABLE = 'schooltimetable',
+  // CLASSROOMTIMETABLE = 'classroomtimetable',
+  // TEACHERSTIMETABLE = 'teacherstimetable',
+  QUESTIONS = 'questions',
+  ASSESSMENTS = 'assessments',
+  SUBJECTS = 'subjects',
+  SUBJECTGRADINGS = 'subjectgradings',
+  QUESTIONITEMS = 'questionitems',
+  SUBJECTTOPICS = 'subjecttopics',
+  TERMLYGRADINGS = 'termlygradings',
+  // STUDENTSUBJECTATTENDANCES = 'studentsubjectattendances',
+  LESSONNOTES = 'lessonnotes',
+  // STUDENTREPORTS = 'studentreports',
+  // SCHOOLGRADINGS = 'schoolgradings',
+  ASSESSMENTRESULTS = 'assessmentresults',
+
+  // ----------------------------------------
   UNMARKEDATTENDANCES = 'unmarkedattendances',
   EMAILS = 'emails',
   SMSMESSENGER = 'smsmessenger',
@@ -48,6 +67,7 @@ export enum FIREBASETABLE {
 
 export enum APIMethods {
     userRegistration = 'userRegistration',
+    saveAcademicAssessment = 'saveAcademicAssessment',
     updateUserProfile = 'updateUserProfile',
     secureRegistration = 'secureRegistration',
     saveAttendanceData = 'saveAttendanceData',

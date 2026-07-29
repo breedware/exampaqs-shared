@@ -120,5 +120,50 @@ export declare const backupDbs: {
         whereKeys: string;
         backupDb: FIREBASETABLE;
     };
+    schoolTimetable: {
+        dbLabel: string;
+        whereKeys: string;
+        backupDb: FIREBASETABLE;
+    };
+    lessonNote: {
+        dbLabel: string;
+        whereKeys: string;
+        backupDb: FIREBASETABLE;
+    };
+    assessment: {
+        dbLabel: string;
+        whereKeys: string;
+        backupDb: FIREBASETABLE;
+    };
+    termlyGradings: {
+        dbLabel: string;
+        whereKeys: string;
+        backupDb: FIREBASETABLE;
+    };
+    question: {
+        dbLabel: string;
+        whereKeys: string;
+        backupDb: FIREBASETABLE;
+    };
+    schoolSubject: {
+        dbLabel: string;
+        whereKeys: string;
+        backupDb: FIREBASETABLE;
+    };
+    subjectGrading: {
+        dbLabel: string;
+        whereKeys: string[];
+        backupDb: FIREBASETABLE;
+    };
+    subjectTopic: {
+        dbLabel: string;
+        whereKeys: string;
+        backupDb: FIREBASETABLE;
+    };
+    questionItem: {
+        dbLabel: string;
+        whereKeys: string;
+        backupDb: FIREBASETABLE;
+    };
 };
 //# sourceMappingURL=backups.firestore.d.ts.map

@@ -1,6 +1,16 @@
 export declare enum FIREBASETABLE {
     ACCOUNTS = "accounts",
     TICKETS = "tickets",
+    SCHOOLTIMETABLE = "schooltimetable",
+    QUESTIONS = "questions",
+    ASSESSMENTS = "assessments",
+    SUBJECTS = "subjects",
+    SUBJECTGRADINGS = "subjectgradings",
+    QUESTIONITEMS = "questionitems",
+    SUBJECTTOPICS = "subjecttopics",
+    TERMLYGRADINGS = "termlygradings",
+    LESSONNOTES = "lessonnotes",
+    ASSESSMENTRESULTS = "assessmentresults",
     UNMARKEDATTENDANCES = "unmarkedattendances",
     EMAILS = "emails",
     SMSMESSENGER = "smsmessenger",
@@ -45,6 +55,7 @@ export declare enum FIREBASETABLE {
 }
 export declare enum APIMethods {
     userRegistration = "userRegistration",
+    saveAcademicAssessment = "saveAcademicAssessment",
     updateUserProfile = "updateUserProfile",
     secureRegistration = "secureRegistration",
     saveAttendanceData = "saveAttendanceData",

@@ -2,6 +2,23 @@ export var FIREBASETABLE;
 (function (FIREBASETABLE) {
     FIREBASETABLE["ACCOUNTS"] = "accounts";
     FIREBASETABLE["TICKETS"] = "tickets";
+    // Academics tables
+    FIREBASETABLE["SCHOOLTIMETABLE"] = "schooltimetable";
+    // CLASSROOMTIMETABLE = 'classroomtimetable',
+    // TEACHERSTIMETABLE = 'teacherstimetable',
+    FIREBASETABLE["QUESTIONS"] = "questions";
+    FIREBASETABLE["ASSESSMENTS"] = "assessments";
+    FIREBASETABLE["SUBJECTS"] = "subjects";
+    FIREBASETABLE["SUBJECTGRADINGS"] = "subjectgradings";
+    FIREBASETABLE["QUESTIONITEMS"] = "questionitems";
+    FIREBASETABLE["SUBJECTTOPICS"] = "subjecttopics";
+    FIREBASETABLE["TERMLYGRADINGS"] = "termlygradings";
+    // STUDENTSUBJECTATTENDANCES = 'studentsubjectattendances',
+    FIREBASETABLE["LESSONNOTES"] = "lessonnotes";
+    // STUDENTREPORTS = 'studentreports',
+    // SCHOOLGRADINGS = 'schoolgradings',
+    FIREBASETABLE["ASSESSMENTRESULTS"] = "assessmentresults";
+    // ----------------------------------------
     FIREBASETABLE["UNMARKEDATTENDANCES"] = "unmarkedattendances";
     FIREBASETABLE["EMAILS"] = "emails";
     FIREBASETABLE["SMSMESSENGER"] = "smsmessenger";
@@ -48,6 +65,7 @@ export var FIREBASETABLE;
 export var APIMethods;
 (function (APIMethods) {
     APIMethods["userRegistration"] = "userRegistration";
+    APIMethods["saveAcademicAssessment"] = "saveAcademicAssessment";
     APIMethods["updateUserProfile"] = "updateUserProfile";
     APIMethods["secureRegistration"] = "secureRegistration";
     APIMethods["saveAttendanceData"] = "saveAttendanceData";

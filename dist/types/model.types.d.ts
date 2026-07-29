@@ -1,4 +1,4 @@
-import { BulkSMSPayload, SingleSMSPayload } from "@breedware/global-utility";
+import { BulkSMSPayload } from "@breedware/global-utility";
 export interface StudenRegFormData {
     accountId?: number;
     reference?: string;
@@ -402,25 +402,16 @@ export interface School {
 }
 export interface VideoResource {
     reference?: string;
-    filePath?: string;
     videoId: string;
     title: string;
     description: string;
-    isAdvert: boolean;
+    module: string;
     groups: string[];
-    duration: string;
-    publishedAt: string;
-    thumbnail: {
-        photoUrl: string;
-        photoPath: string;
-    };
-    category: string;
-    youtubeUrl: string;
-    author: {
-        name: string;
-        avatar: string;
-    };
-    privacyStatus: 'public' | 'unlisted' | 'private';
+    sortOrder: number;
+    isFeatured: boolean;
+    isActive: boolean;
+    createdAt?: string;
+    updatedAt?: string;
 }
 export interface SchoolLocation {
     locationId: number;
@@ -820,7 +811,7 @@ export interface AttendanceFormData {
     droffOffId?: number;
     eventId?: number;
     action: 'attendance';
-    sms?: BulkSMSPayload | SingleSMSPayload;
+    sms?: BulkSMSPayload;
 }
 export interface PendingClassAssignment {
     studentId: number;

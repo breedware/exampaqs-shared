@@ -1,6 +1,6 @@
 // student reg form data
 
-import { BulkSMSPayload, SingleSMSPayload } from "@breedware/global-utility";
+import { BulkSMSPayload } from "@breedware/global-utility";
 
 export interface StudenRegFormData {
     accountId?: number;
@@ -447,27 +447,20 @@ export interface School {
     }
 }
 
+
+
 export interface VideoResource {
     reference?: string;
-    filePath?: string;
-    videoId: string;              // Crucial: The unique YouTube Video ID (e.g., 'dQw4w9WgXcQ')
+    videoId: string;
     title: string;
     description: string;
-    isAdvert: boolean;
+    module: string;
     groups: string[];
-    duration: string;        // Highly recommended: ISO 8601 string from YouTube (e.g., 'PT15M33S')
-    publishedAt: string;     // ISO timestamp of when it went live on YouTube
-    thumbnail: {
-        photoUrl: string;
-        photoPath: string;
-    };       // URL to the preferred resolution thumbnail
-    category: string;        // YouTube Category ID or mapped string name
-    youtubeUrl: string;      // Computed URL: `https://www.youtube.com/watch?v=${id}`
-    author: {
-        name: string;
-        avatar: string;
-    };
-    privacyStatus: 'public' | 'unlisted' | 'private'; 
+    sortOrder: number;
+    isFeatured: boolean;
+    isActive: boolean;
+    createdAt?: string;
+    updatedAt?: string; 
 }
 
 export interface SchoolLocation {
@@ -903,7 +896,7 @@ export interface AttendanceFormData {
     droffOffId?: number;
     eventId?: number;
     action: 'attendance';
-    sms?: BulkSMSPayload | SingleSMSPayload;
+    sms?: BulkSMSPayload;
 }
 
 export interface PendingClassAssignment {

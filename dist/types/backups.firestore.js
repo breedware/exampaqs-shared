@@ -125,5 +125,70 @@ export const backupDbs = {
         whereKeys: 'adviceId',
         backupDb: FIREBASETABLE.PAYMENTADVICES
     },
+    schoolTimetable: {
+        dbLabel: 'currentSchoolTimetable',
+        whereKeys: 'termId',
+        backupDb: FIREBASETABLE.SCHOOLTIMETABLE
+    },
+    // teachersTimetable: {
+    //     dbLabel: 'currentTeachersTimetable',
+    //     whereKeys: ['slotId', 'teacherId'],
+    //     backupDb: FIREBASETABLE.TEACHERSTIMETABLE
+    // },
+    lessonNote: {
+        dbLabel: 'currentNote',
+        whereKeys: 'noteId',
+        backupDb: FIREBASETABLE.LESSONNOTES
+    },
+    // subjectAttendance: {
+    //     dbLabel: 'currentSubjectAttendance',
+    //     whereKeys: 'attendanceId',
+    //     backupDb: FIREBASETABLE.STUDENTSUBJECTATTENDANCES
+    // },
+    assessment: {
+        dbLabel: 'currentAssessment',
+        whereKeys: 'assessmentId',
+        backupDb: FIREBASETABLE.ASSESSMENTS
+    },
+    termlyGradings: {
+        dbLabel: 'currentTermlyGrading',
+        whereKeys: 'termId',
+        backupDb: FIREBASETABLE.TERMLYGRADINGS,
+    },
+    // assessmentResults: {
+    //     dbLabel: 'currentAssessmentResult',
+    //     whereKeys: ['studentId', 'assessmentId'],
+    //     backupDb: FIREBASETABLE.ASSESSMENTRESULTS
+    // },
+    question: {
+        dbLabel: 'currentQuestion',
+        whereKeys: 'questionId',
+        backupDb: FIREBASETABLE.QUESTIONS
+    },
+    schoolSubject: {
+        dbLabel: 'currentSubject',
+        whereKeys: 'subjectId',
+        backupDb: FIREBASETABLE.SUBJECTS
+    },
+    subjectGrading: {
+        dbLabel: 'currentSubjectGrading',
+        whereKeys: ['subjectId', 'classId', 'gradeId'],
+        backupDb: FIREBASETABLE.SUBJECTGRADINGS
+    },
+    subjectTopic: {
+        dbLabel: 'currentSubjectTopic',
+        whereKeys: 'topicId',
+        backupDb: FIREBASETABLE.SUBJECTTOPICS
+    },
+    questionItem: {
+        dbLabel: 'currentQuestionItem',
+        whereKeys: 'itemId',
+        backupDb: FIREBASETABLE.QUESTIONITEMS
+    },
+    // reportSheet: {
+    //     dbLabel: 'currentReportSheet',
+    //     whereKeys: ['studentId', 'termId'],
+    //     backupDb: FIREBASETABLE.STUDENTREPORTS
+    // },
 };
 //# sourceMappingURL=backups.firestore.js.map
