@@ -142,7 +142,7 @@ export const backupDbs = {
     },
     schoolGrading: {
         dbLabel: 'currentGrading',
-        whereKeys: 'gradeId',
+        whereKeys: 'schoolId',
         backupDb: FIREBASETABLE.SCHOOLGRADINGS,
     },
     question: {
