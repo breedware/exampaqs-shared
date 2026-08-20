@@ -32,7 +32,7 @@ export const backupDbs = {
     },
     bankAccounts: {
         dbLabel: 'currentBankAccount',
-        whereKeys: 'schoolId',
+        whereKeys: 'bankId',
         backupDb: FIREBASETABLE.BANKACCOUNTS
     },
     parents: {
@@ -127,7 +127,7 @@ export const backupDbs = {
     },
     schoolTimetable: {
         dbLabel: 'currentSchoolTimetable',
-        whereKeys: 'termId',
+        whereKeys: ['termId', 'locationId'],
         backupDb: FIREBASETABLE.SCHOOLTIMETABLE
     },
     lessonNote: {
@@ -157,7 +157,7 @@ export const backupDbs = {
     },
     subjectGrading: {
         dbLabel: 'currentSubjectGrading',
-        whereKeys: ['subjectId', 'classId', 'gradeId', 'termId'],
+        whereKeys: ['subjectId', 'classId', 'termId'],
         backupDb: FIREBASETABLE.SUBJECTGRADINGS
     },
     subjectTopic: {

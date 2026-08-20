@@ -473,6 +473,196 @@ export interface BankAccount {
     updatedAt: number;
     isMain: boolean;
 }
+export interface SchoolSubject {
+    reference?: string;
+    schoolId: number;
+    subjectId: number;
+    label: string;
+}
+export interface Assessment {
+    reference?: string;
+    assessmentId: number;
+    title: string;
+    subjectId: number;
+    subject: string;
+    gradingId: number;
+    gradingCategory: string;
+    classrooms: AssessmentClassroom[];
+    classIds: number[];
+    classroomIds: number[];
+    locations: AssessmentLocation[];
+    locationIds: number[];
+    isOnsite: boolean;
+    isCbt: boolean;
+    hasResult: boolean;
+    questionIds?: number[];
+    isControlled?: boolean;
+    startTime?: number;
+    endTime?: number;
+    createdAt?: number;
+    durationInMinutes?: number;
+    submissionDeadline?: number;
+    allowUpload?: boolean;
+    uploadType?: string;
+}
+export interface AssessmentClassroom {
+    classId: number;
+    classroom: string;
+    class: string;
+}
+export interface AssessmentLocation {
+    locationId: number;
+    locationName: string;
+}
+export interface LessonNote {
+    noteId: number;
+    topic: string;
+    subjectId: number;
+    subject: string;
+    schoolId: number;
+    week: number;
+    classId: number;
+    className: string;
+    wkStartDate: string;
+    wkEndDate: string;
+    numberOfPeriods: number;
+    teacherId: number;
+    teacherName: string;
+    termId: number;
+    fileUrl: string | null;
+    filePath: string | null;
+    isApproved: boolean;
+    isRejected: boolean;
+    approvalInfo: LessonNoteApproval | null;
+    rejectionInfo: LessonNoteRejection | null;
+}
+export interface LessonNoteApproval {
+    approverId: number;
+    approverName: string;
+    createdAt: number;
+}
+export interface LessonNoteRejection {
+    rejecterId: number;
+    rejecterName: string;
+    remarks: string;
+    createdAt: number;
+}
+export interface Question {
+    reference?: string;
+    questionId: number;
+    subjectId: number;
+    subject: string;
+    schoolId: number;
+    classes: QuestionClass[];
+    classIds: number[];
+    sections: QuestionSection[];
+    sectionIds: number[];
+    options: QuestionOption[];
+    topics: QuestionTopic[];
+    topicIds: number[];
+    /**
+     * Answers for gap-fill questions.
+     * Adjust to `string[]` if you know the database only stores strings.
+     */
+    gapAnswers: string[];
+    isGapped: boolean;
+    gapIsOrdered: boolean;
+}
+export interface QuestionClass {
+    classId: number;
+    className: string;
+}
+export interface QuestionSection {
+    sectionId: number;
+    sectionLabel: string;
+    order: number;
+    content: string;
+    isImage: boolean;
+    pathUrl: string | null;
+}
+export interface QuestionOption {
+    optionId: number;
+    content: string;
+    isImage: boolean;
+    isCorrect: boolean;
+    pathUrl: string | null;
+}
+export interface QuestionTopic {
+    topicId: number;
+    title: string;
+}
+export interface QuestionItem {
+    reference?: string;
+    itemId: number;
+    label: string;
+    order: number;
+}
+export interface SchoolGrading {
+    reference?: string;
+    schoolId: number;
+    grading: {
+        gradeId: number;
+        label: string;
+    }[];
+}
+export interface SchoolSubject {
+    reference?: string;
+    subjectId: number;
+    schoolId: number;
+    label: string;
+}
+export interface SubjectGrading {
+    reference?: string;
+    subjectId: number;
+    classId: number;
+    termId: number;
+    gradings: {
+        grade: number;
+        gradeId: number;
+    }[];
+}
+export interface SubjectTopic {
+    reference?: string;
+    topicId: number;
+    subjectId: number;
+    label: string;
+}
+export interface TermlyTimetable {
+    reference?: string;
+    termId: number;
+    locationId: number;
+    slots: {
+        slotId: number;
+        termId: number;
+        locationId: number;
+        dayOfTheWeek: string;
+        startTime: string;
+        endTime: string;
+        isBreak: boolean;
+        label: string;
+        createdAt: number;
+        updatedAt: number;
+    }[];
+}
+export interface TimetableSlot {
+    slotId: number;
+    teacherId: number;
+    subjectId: number;
+    classroomId: number;
+    slotName: string;
+    className: string;
+    schoolId: number;
+    classId: number;
+    classroomName: string;
+    subject: string;
+    teacherName: string;
+    startTime: number;
+    endTime: number;
+    dayOfTheWeek: string;
+    locationId: number;
+    isBreak: boolean;
+    termId: number;
+}
 export interface Payment {
     locationId: number;
     locationName: string;

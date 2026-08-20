@@ -122,7 +122,7 @@ export declare const backupDbs: {
     };
     schoolTimetable: {
         dbLabel: string;
-        whereKeys: string;
+        whereKeys: string[];
         backupDb: FIREBASETABLE;
     };
     lessonNote: {

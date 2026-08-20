@@ -6,13 +6,14 @@ export var FIREBASETABLE;
     FIREBASETABLE["SCHOOLTIMETABLE"] = "schooltimetable";
     // CLASSROOMTIMETABLE = 'classroomtimetable',
     // TEACHERSTIMETABLE = 'teacherstimetable',
+    FIREBASETABLE["PENDINGTRANSFERS"] = "pendingtransfers";
     FIREBASETABLE["QUESTIONS"] = "questions";
     FIREBASETABLE["ASSESSMENTS"] = "assessments";
     FIREBASETABLE["SUBJECTS"] = "subjects";
     FIREBASETABLE["SUBJECTGRADINGS"] = "subjectgradings";
     FIREBASETABLE["QUESTIONITEMS"] = "questionitems";
     FIREBASETABLE["SUBJECTTOPICS"] = "subjecttopics";
-    FIREBASETABLE["SCHOOLGRADINGS"] = "schoolgrading";
+    FIREBASETABLE["SCHOOLGRADINGS"] = "schoolgradings";
     // STUDENTSUBJECTATTENDANCES = 'studentsubjectattendances',
     FIREBASETABLE["LESSONNOTES"] = "lessonnotes";
     // STUDENTREPORTS = 'studentreports',
@@ -61,6 +62,8 @@ export var FIREBASETABLE;
     FIREBASETABLE["TRANSACTIONNOTIFICATIONS"] = "transactionnotifications";
     FIREBASETABLE["PENDINGSTUDENTDVA"] = "pendingstudentdva";
     FIREBASETABLE["SCHEDULEDSMS"] = "scheduledsms";
+    // REQUESTS
+    FIREBASETABLE["SUBJECTREQUESTS"] = "subjectrequests";
 })(FIREBASETABLE || (FIREBASETABLE = {}));
 export var APIMethods;
 (function (APIMethods) {
@@ -94,5 +97,6 @@ export var FETCHMethods;
     FETCHMethods["FETCH_PAID_INSTALMENTS"] = "func_fetch_paid_instalments";
     FETCHMethods["FETCH_CLASSROOM_TEACHERS"] = "func_fetch_class_teachers";
     FETCHMethods["FETCH_STUDENT_OUTSTANDINGS"] = "func_fetch_student_outstandings";
+    FETCHMethods["FETCH_TIMETABLE"] = "func_fetch_timetable";
 })(FETCHMethods || (FETCHMethods = {}));
 //# sourceMappingURL=firestore.table.js.map

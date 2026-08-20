@@ -6,13 +6,14 @@ export enum FIREBASETABLE {
   SCHOOLTIMETABLE = 'schooltimetable',
   // CLASSROOMTIMETABLE = 'classroomtimetable',
   // TEACHERSTIMETABLE = 'teacherstimetable',
+  PENDINGTRANSFERS = 'pendingtransfers',
   QUESTIONS = 'questions',
   ASSESSMENTS = 'assessments',
   SUBJECTS = 'subjects',
   SUBJECTGRADINGS = 'subjectgradings',
   QUESTIONITEMS = 'questionitems',
   SUBJECTTOPICS = 'subjecttopics',
-  SCHOOLGRADINGS = 'schoolgrading',
+  SCHOOLGRADINGS = 'schoolgradings',
   // STUDENTSUBJECTATTENDANCES = 'studentsubjectattendances',
   LESSONNOTES = 'lessonnotes',
   // STUDENTREPORTS = 'studentreports',
@@ -63,6 +64,9 @@ export enum FIREBASETABLE {
   TRANSACTIONNOTIFICATIONS = 'transactionnotifications',
   PENDINGSTUDENTDVA = 'pendingstudentdva',
   SCHEDULEDSMS = 'scheduledsms',
+
+  // REQUESTS
+  SUBJECTREQUESTS = 'subjectrequests',
 }
 
 export enum APIMethods {
@@ -95,5 +99,6 @@ export enum FETCHMethods {
   FETCH_SCHOOL_PTA = 'func_fetch_school_pta',
   FETCH_PAID_INSTALMENTS = 'func_fetch_paid_instalments',
   FETCH_CLASSROOM_TEACHERS = 'func_fetch_class_teachers',
-  FETCH_STUDENT_OUTSTANDINGS = 'func_fetch_student_outstandings'
+  FETCH_STUDENT_OUTSTANDINGS = 'func_fetch_student_outstandings',
+  FETCH_TIMETABLE = 'func_fetch_timetable'
 }
