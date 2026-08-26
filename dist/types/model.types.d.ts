@@ -611,9 +611,116 @@ export interface SchoolSubject {
     schoolId: number;
     label: string;
 }
+export interface SchoolAttendancePerformanceAnalytics {
+    locationId: number;
+    numberOfDaysSchoolOpen: number;
+    overallPunctuality: {
+        studentId: number;
+        studentName: string;
+        grade: number;
+        photoUrl: string;
+    }[];
+    punctualityPerClass: {
+        studentId: number;
+        studentName: string;
+        grade: number;
+        photoUrl: string;
+    }[];
+    punctualityPerClassroom: {
+        studentId: number;
+        studentName: string;
+        grade: number;
+        photoUrl: string;
+    }[];
+}
+export interface SchoolOverallPerformanceAnalytics {
+    overallPerformances: {
+        studentId: number;
+        studentName: string;
+        photoUrl: string;
+        grade: number;
+    }[];
+    overallPerformancebyClass: {
+        classId: number;
+        className: string;
+        performances: {
+            studentId: number;
+            studentName: string;
+            photoUrl: string;
+            grade: number;
+        }[];
+    }[];
+    overallPerformancebyClassroom: {
+        classroomId: number;
+        performances: {
+            studentId: number;
+            studentName: string;
+            photoUrl: string;
+            grade: number;
+        }[];
+    }[];
+}
+export interface SchoolSubjectPerformanceAnalytics {
+    subjectId: number;
+    subjectName: string;
+    overallPerformances: {
+        studentId: number;
+        studentName: string;
+        photoUrl: string;
+        grade: number;
+    }[];
+    overallPerformancebyClass: {
+        classId: number;
+        className: string;
+        performances: {
+            studentId: number;
+            studentName: string;
+            photoUrl: string;
+            grade: number;
+        }[];
+    }[];
+    overallPerformancebyClassroom: {
+        classroomId: number;
+        performances: {
+            studentId: number;
+            studentName: string;
+            photoUrl: string;
+            grade: number;
+        }[];
+    }[];
+    overallSubjectPerformanceByClass: {
+        classId: number;
+        performances: {
+            studentId: number;
+            studentName: string;
+            photoUrl: string;
+            grade: number;
+        }[];
+    };
+}
+export interface StudentAssessmentResult {
+    studentId: number;
+    studentName: string;
+    performances: {
+        subjectId: number;
+        gradeId: number;
+        grade: number;
+    }[];
+}
+export interface BroadSheet {
+    classroomId: number;
+    result: {
+        studentId: number;
+        subjectId: number;
+        grade: number;
+    };
+}
 export interface SubjectGrading {
     reference?: string;
     subjectId: number;
+    subject: string;
+    className: string;
+    term: string;
     classId: number;
     termId: number;
     gradings: {
