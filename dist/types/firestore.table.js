@@ -2,6 +2,7 @@ export var FIREBASETABLE;
 (function (FIREBASETABLE) {
     FIREBASETABLE["ACCOUNTS"] = "accounts";
     FIREBASETABLE["TICKETS"] = "tickets";
+    FIREBASETABLE["ATTENDANCERANKINGS"] = "attendancerankings";
     // Academics tables
     FIREBASETABLE["SCHOOLTIMETABLE"] = "schooltimetable";
     // CLASSROOMTIMETABLE = 'classroomtimetable',

@@ -167,6 +167,14 @@ export const backupDbs = {
         backupDb: FIREBASETABLE.QUESTIONS
     },
 
+    attendanceRanking: {
+        dbLabel: 'currentRanking',
+        whereKeys: 'schoolId',
+        backupDb: FIREBASETABLE.ATTENDANCERANKINGS
+    },
+
+    // attendanceRanking
+
     schoolSubject: {
         dbLabel: 'currentSubject',
         whereKeys: 'subjectId',

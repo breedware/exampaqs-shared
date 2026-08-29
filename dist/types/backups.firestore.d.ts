@@ -145,6 +145,11 @@ export declare const backupDbs: {
         whereKeys: string;
         backupDb: FIREBASETABLE;
     };
+    attendanceRanking: {
+        dbLabel: string;
+        whereKeys: string;
+        backupDb: FIREBASETABLE;
+    };
     schoolSubject: {
         dbLabel: string;
         whereKeys: string;

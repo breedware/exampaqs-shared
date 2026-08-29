@@ -541,6 +541,7 @@ export interface Assessment {
 
   subjectId: number;
   subject: string;
+  termId: number;
 
   gradingId: number;
   gradingCategory: string;
@@ -807,10 +808,29 @@ export interface SchoolSubjectPerformanceAnalytics {
 export interface StudentAssessmentResult {
     studentId: number;
     studentName: string;
+    photoUrl: string;
+    admissionNumber: string;
+    attendance: {
+        daysSchoolOpen: number;
+        daysPresent: number;
+        daysAbsent: number;
+        daysExcused: number;
+        grade: number;
+    };
     performances: {
         subjectId: number;
         gradeId: number;
         grade: number;        
+    }[];
+    psycomotiveEvaluation: {
+        parameter: string;
+        rate: number;
+    }[];
+    comments: {
+        commentId: number;
+        comment: string;
+        staffRole: string;
+        staffId: number;
     }[]
 }
 

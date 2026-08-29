@@ -1,6 +1,7 @@
 export declare enum FIREBASETABLE {
     ACCOUNTS = "accounts",
     TICKETS = "tickets",
+    ATTENDANCERANKINGS = "attendancerankings",
     SCHOOLTIMETABLE = "schooltimetable",
     PENDINGTRANSFERS = "pendingtransfers",
     QUESTIONS = "questions",
