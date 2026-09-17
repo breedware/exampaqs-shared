@@ -48,6 +48,46 @@ export var TERM_STATUS;
     TERM_STATUS["WITHDRAWN"] = "withdrawn";
     TERM_STATUS["GRADUATED"] = "graduated";
 })(TERM_STATUS || (TERM_STATUS = {}));
+export var JOB_QUALIFICATIONS;
+(function (JOB_QUALIFICATIONS) {
+    JOB_QUALIFICATIONS["BASIC"] = "Basic Education/Primary School Certificate";
+    JOB_QUALIFICATIONS["SSCE"] = "Senior Secondary Certificate Examination";
+    JOB_QUALIFICATIONS["ND"] = "National Diploma";
+    JOB_QUALIFICATIONS["HND"] = "Higher National Diploma";
+    JOB_QUALIFICATIONS["BSC"] = "Bachelor Degree";
+    JOB_QUALIFICATIONS["MSC"] = "Masters Degree";
+    JOB_QUALIFICATIONS["PHD"] = "Doctorate Degreee";
+})(JOB_QUALIFICATIONS || (JOB_QUALIFICATIONS = {}));
+export const CertificateRankings = [
+    {
+        certificate: JOB_QUALIFICATIONS.BASIC,
+        ranking: 1
+    },
+    {
+        certificate: JOB_QUALIFICATIONS.SSCE,
+        ranking: 2
+    },
+    {
+        certificate: JOB_QUALIFICATIONS.ND,
+        ranking: 3
+    },
+    {
+        certificate: JOB_QUALIFICATIONS.HND,
+        ranking: 4
+    },
+    {
+        certificate: JOB_QUALIFICATIONS.BSC,
+        ranking: 5
+    },
+    {
+        certificate: JOB_QUALIFICATIONS.MSC,
+        ranking: 6
+    },
+    {
+        certificate: JOB_QUALIFICATIONS.PHD,
+        ranking: 7
+    }
+];
 export var STUDENT_TRIP_STATUS;
 (function (STUDENT_TRIP_STATUS) {
     STUDENT_TRIP_STATUS["ONBOARD"] = "onboard";

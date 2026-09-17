@@ -58,6 +58,60 @@ export interface StudentSupRegFormData {
     stateOfOrigin: string;
     nationality: string;
 }
+export interface ExaminationPaper {
+    body: string;
+    bodyId: string;
+    diet: string;
+    dietId: number;
+    examId: string;
+    examination: string;
+    groupId: number;
+    groupName: string;
+    id: number;
+    isReady: number;
+    paperType: string;
+    paperTypeId: number;
+    subject: string;
+    subjectId: string;
+    timeAllowed: number;
+    year: number;
+}
+export interface QuestionItem {
+    /** The unique identifier for the associated exam question */
+    examQuestionId: number;
+    /** The unique identifier for the instruction */
+    id: number;
+    /** URL pointing to an accompanying image resource (can be empty string or null) */
+    imageUrl?: string | null;
+    /** HTML or plain text content of the instruction */
+    text: string;
+}
+export interface ExplanationSupport {
+    /** The unique identifier for the associated exam question */
+    examQuestionId: number;
+    /** The unique identifier for the explanation support record */
+    id: number;
+    /** Embedded SVG markup string or null/empty string if not present */
+    image?: string | null;
+    /** URL pointing to an external image resource */
+    imageUrl?: string | null;
+    /** URL pointing to an external video resource */
+    videoUrl?: string | null;
+}
+export interface PracticeQuestion {
+    choices: string[];
+    examQuestionId: number;
+    explanationText: string;
+    id: number;
+    imageUrl: string;
+    instructionId: number;
+    isCorrect: string;
+    number: number;
+    passageId: number;
+    recommendedTopics: string;
+    subObjective: string;
+    text: string;
+}
 /**
  * user account
  */
@@ -430,6 +484,73 @@ export interface SchoolLocation {
     latitude?: number;
     allowableDistance?: number;
 }
+export interface AttendanceRanking {
+    reference?: string;
+    schoolId: number;
+    present: number;
+    absent: number;
+    score: number;
+    excused: number;
+    unmarked: number;
+    late: number;
+}
+export interface Advert {
+    reference?: string;
+    name: string;
+    uploadDate: string;
+    startDate: number;
+    endDate: number;
+    photoUrl?: string;
+    photoPath?: string;
+    schoolId: number;
+}
+export interface JobApplication {
+    reference?: string;
+    applicantName: string;
+    email: string;
+    phone: string;
+    jobReference: string;
+    appliedDate: string;
+    status: 'pending' | 'interview_scheduled' | 'declined' | 'accepted';
+    applicantPlatformId: string;
+    applicantAccountId: number;
+}
+export declare enum JOB_QUALIFICATIONS {
+    BASIC = "Basic Education/Primary School Certificate",
+    SSCE = "Senior Secondary Certificate Examination",
+    ND = "National Diploma",
+    HND = "Higher National Diploma",
+    BSC = "Bachelor Degree",
+    MSC = "Masters Degree",
+    PHD = "Doctorate Degreee"
+}
+interface QualificationRank {
+    certificate: JOB_QUALIFICATIONS;
+    ranking: number;
+}
+export declare const CertificateRankings: {
+    certificate: JOB_QUALIFICATIONS;
+    ranking: number;
+}[];
+export interface JobVacancy {
+    reference?: string;
+    potoUrl?: string;
+    photoPath?: string;
+    schoolId: number;
+    schoolName: string;
+    title: string;
+    description: string;
+    schoolLocations: string[];
+    minQualification: {
+        qualification: QualificationRank;
+        relevantFields: string[];
+    };
+    trcnRequired: boolean;
+    closingDate: number;
+    createdAt: number;
+    requiredSocials: string[];
+    salaryOffer?: number;
+}
 export interface SchoolClassrooms {
     classroomId: number;
     reference?: string;
@@ -516,8 +637,10 @@ export interface AssessmentLocation {
     locationName: string;
 }
 export interface LessonNote {
+    reference?: string;
     noteId: number;
     topic: string;
+    submissionDate: number;
     subjectId: number;
     subject: string;
     schoolId: number;
@@ -732,8 +855,11 @@ export interface BroadSheet {
     result: {
         studentId: number;
         subjectId: number;
+        admissionNumber: string;
         grade: number;
-    };
+        displayName: string;
+        photoUrl: string;
+    }[];
 }
 export interface SubjectGrading {
     reference?: string;
@@ -747,6 +873,21 @@ export interface SubjectGrading {
         grade: number;
         gradeId: number;
     }[];
+}
+export interface StudentAssessmentResult {
+    reference?: string;
+    assessmentId: number;
+    studentId: number;
+    displayName: string;
+    photoUrl: string;
+    score: number;
+    termId: number;
+    subjectId: number;
+    classroomId: number;
+    classId: number;
+    locationId: number;
+    createdAt: number;
+    gradingId: number;
 }
 export interface SubjectTopic {
     reference?: string;
