@@ -2,6 +2,13 @@ export declare enum FIREBASETABLE {
     ACCOUNTS = "accounts",
     TICKETS = "tickets",
     ATTENDANCERANKINGS = "attendancerankings",
+    EXAMINATIONPAPERS = "examinationpapers",
+    PRACTICEQUESTIONS = "practicequestions",
+    PRACTICEINSTRUCTIONS = "practiceinstructions",
+    EXPLANATIONSUPPORTS = "explanationsupports",
+    PRACTICEEXPLANATIONS = "practiceexplanations",
+    PRACTICESAMPLES = "practicesamples",
+    PRACTICEPASSAGES = "practicepassages",
     SCHOOLTIMETABLE = "schooltimetable",
     PENDINGTRANSFERS = "pendingtransfers",
     QUESTIONS = "questions",
@@ -73,7 +80,8 @@ export declare enum APIMethods {
     createPaystackCustomer = "createPaystackCustomer",
     initateTransaction = "initateTransaction",
     initiateFundTransfer = "initiateFundTransfer",
-    youtubeUploadAuth = "youtubeUploadAuth"
+    youtubeUploadAuth = "youtubeUploadAuth",
+    signInWithPlatformId = "signInWithPlatformId"
 }
 export declare enum FETCHMethods {
     ANALYTICS = "func_fetch_school_analytics",

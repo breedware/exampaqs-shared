@@ -4,6 +4,13 @@ export var FIREBASETABLE;
     FIREBASETABLE["TICKETS"] = "tickets";
     FIREBASETABLE["ATTENDANCERANKINGS"] = "attendancerankings";
     // Academics tables
+    FIREBASETABLE["EXAMINATIONPAPERS"] = "examinationpapers";
+    FIREBASETABLE["PRACTICEQUESTIONS"] = "practicequestions";
+    FIREBASETABLE["PRACTICEINSTRUCTIONS"] = "practiceinstructions";
+    FIREBASETABLE["EXPLANATIONSUPPORTS"] = "explanationsupports";
+    FIREBASETABLE["PRACTICEEXPLANATIONS"] = "practiceexplanations";
+    FIREBASETABLE["PRACTICESAMPLES"] = "practicesamples";
+    FIREBASETABLE["PRACTICEPASSAGES"] = "practicepassages";
     FIREBASETABLE["SCHOOLTIMETABLE"] = "schooltimetable";
     // CLASSROOMTIMETABLE = 'classroomtimetable',
     // TEACHERSTIMETABLE = 'teacherstimetable',
@@ -85,6 +92,7 @@ export var APIMethods;
     APIMethods["initateTransaction"] = "initateTransaction";
     APIMethods["initiateFundTransfer"] = "initiateFundTransfer";
     APIMethods["youtubeUploadAuth"] = "youtubeUploadAuth";
+    APIMethods["signInWithPlatformId"] = "signInWithPlatformId";
 })(APIMethods || (APIMethods = {}));
 export var FETCHMethods;
 (function (FETCHMethods) {

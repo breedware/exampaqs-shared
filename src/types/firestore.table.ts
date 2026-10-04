@@ -2,7 +2,15 @@ export enum FIREBASETABLE {
   ACCOUNTS = 'accounts',
   TICKETS = 'tickets',
   ATTENDANCERANKINGS = 'attendancerankings',
+  
   // Academics tables
+  EXAMINATIONPAPERS = 'examinationpapers',
+  PRACTICEQUESTIONS = 'practicequestions',
+  PRACTICEINSTRUCTIONS = 'practiceinstructions',
+  EXPLANATIONSUPPORTS = 'explanationsupports',
+  PRACTICEEXPLANATIONS = 'practiceexplanations',
+  PRACTICESAMPLES = 'practicesamples',
+  PRACTICEPASSAGES = 'practicepassages',
 
   SCHOOLTIMETABLE = 'schooltimetable',
   // CLASSROOMTIMETABLE = 'classroomtimetable',
@@ -87,7 +95,8 @@ export enum APIMethods {
     createPaystackCustomer = 'createPaystackCustomer',
     initateTransaction = 'initateTransaction',
     initiateFundTransfer = 'initiateFundTransfer',
-    youtubeUploadAuth = 'youtubeUploadAuth'
+    youtubeUploadAuth = 'youtubeUploadAuth',
+    signInWithPlatformId = 'signInWithPlatformId'
 }
 
 export enum FETCHMethods {

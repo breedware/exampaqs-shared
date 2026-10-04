@@ -1,7 +1,7 @@
 export declare enum CUSTOMCOLORS {
-    PRIMARY = "#3b5837",
+    PRIMARY = "#1F6B75",
     SECONDARY = "#82a853",
-    BG = "rgb(15, 64, 34)",
+    BG = "#1E293B",
     ACCENT = "#99e0c5",
     LIGHT = "#d6f5faff",
     ERROR = "#d20d1d",
