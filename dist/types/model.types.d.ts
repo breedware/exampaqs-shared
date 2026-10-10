@@ -112,6 +112,36 @@ export interface PracticeQuestion {
     subObjective: string;
     text: string;
 }
+interface IDRequestAccount {
+    accountId: number;
+    photoUrl: string;
+    displayName: string;
+    isStudent: boolean;
+    withLanyard: boolean;
+    platformNumber: string;
+    withIdCard: boolean;
+}
+export interface IDLanyardTemplate {
+    reference?: string;
+    schoolId: number;
+    category: 'student' | 'teacher';
+    imageUrl: string;
+    imagePath: string;
+    status: 'pending' | 'approved' | 'disapproved';
+}
+export interface IDRequest {
+    reference?: string;
+    requestDate: string;
+    requestTimestamp: number;
+    requestAccounts: IDRequestAccount[];
+    orderNumber: string;
+    amountPaid?: string;
+    schoolId: number;
+    schoolName: string;
+    schoolLogoUrl: string;
+    status: 'ordered' | 'processing' | 'delivery' | 'delivered';
+    deliveryDate?: string;
+}
 /**
  * user account
  */
