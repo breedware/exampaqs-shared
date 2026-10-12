@@ -15,7 +15,7 @@ export enum FIREBASETABLE {
   SCHOOLTIMETABLE = 'schooltimetable',
   // CLASSROOMTIMETABLE = 'classroomtimetable',
   // TEACHERSTIMETABLE = 'teacherstimetable',
-  PENDINGTRANSFERS = 'pendingtransfers',
+  // PENDINGTRANSFERS = 'pendingtransfers',
   QUESTIONS = 'questions',
   ASSESSMENTS = 'assessments',
   SUBJECTS = 'subjects',
@@ -67,6 +67,11 @@ export enum FIREBASETABLE {
   CANCELLEDPAYMENTS = 'cancelledpayments',
   VIDEORESOURCES = 'videoresources',
   YOUTUBEAUTHS = 'youtubeauths',
+  IDREQUESTS = 'idrequests',
+  IDTEMPLATES = 'idtemplates',
+  CHECKOUTS = 'checkouts',
+  CHECKOUTACCOUNTS = 'checkoutaccounts',
+  CUSTOMERS = 'customers',
 
   // TRIGGERS
   SCHOOLBANKPROGRESS = 'schoolbankprogress',

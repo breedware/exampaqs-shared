@@ -466,6 +466,43 @@ export interface UnmarkedAttendance {
     }[]
 }
 
+export interface PaymentCheckout {
+    reference?: string;
+    date: string;
+    amount: number;
+    payload: Record<string, any>;
+    purpose: PAYMENT_PURPOSE;
+    email?: string;
+    schoolId?: string;
+    schoolName?: string;
+    recipient?: {
+        recipientCode: string;
+        amount: number;
+        transferReference: string;
+    }[];
+    schoolReference?: string;
+}
+
+// check out DVA account
+export interface CheckoutAccount {
+    reference?: string;
+    accountName: string;
+    accountNumber: string;
+    accountExpiration: number;
+    vdaAssignmentCode: string;
+    bankName: string;
+    dvaId: string;
+    deleteAt: string;
+}
+
+export interface Customer {
+    reference?: string;
+    schoolId?: number;
+    customerCode: string;
+    firstName: string;
+    lastName: string;
+}
+
 export interface CancelledPayment {
     reference?: string;
     instalmentId: number;
@@ -1389,7 +1426,9 @@ export interface BankAccountCreationPayload {
 export enum PAYMENT_PURPOSE {
     SCHOOL_SMS = 'school sms',
     ACCOUNT_SMS = 'account sms',
-    SCHOOL_FEE = 'school fee'
+    SCHOOL_FEE = 'school fees',
+    ADMISSION_FORM = 'admission form',
+    ID_CARD_REQUEST = 'id card request'
 }
 
 export interface FeePayment {

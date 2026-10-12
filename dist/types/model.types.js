@@ -128,6 +128,8 @@ export var PAYMENT_PURPOSE;
 (function (PAYMENT_PURPOSE) {
     PAYMENT_PURPOSE["SCHOOL_SMS"] = "school sms";
     PAYMENT_PURPOSE["ACCOUNT_SMS"] = "account sms";
-    PAYMENT_PURPOSE["SCHOOL_FEE"] = "school fee";
+    PAYMENT_PURPOSE["SCHOOL_FEE"] = "school fees";
+    PAYMENT_PURPOSE["ADMISSION_FORM"] = "admission form";
+    PAYMENT_PURPOSE["ID_CARD_REQUEST"] = "id card request";
 })(PAYMENT_PURPOSE || (PAYMENT_PURPOSE = {}));
 //# sourceMappingURL=model.types.js.map

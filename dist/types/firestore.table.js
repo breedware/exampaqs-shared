@@ -14,7 +14,7 @@ export var FIREBASETABLE;
     FIREBASETABLE["SCHOOLTIMETABLE"] = "schooltimetable";
     // CLASSROOMTIMETABLE = 'classroomtimetable',
     // TEACHERSTIMETABLE = 'teacherstimetable',
-    FIREBASETABLE["PENDINGTRANSFERS"] = "pendingtransfers";
+    // PENDINGTRANSFERS = 'pendingtransfers',
     FIREBASETABLE["QUESTIONS"] = "questions";
     FIREBASETABLE["ASSESSMENTS"] = "assessments";
     FIREBASETABLE["SUBJECTS"] = "subjects";
@@ -65,6 +65,11 @@ export var FIREBASETABLE;
     FIREBASETABLE["CANCELLEDPAYMENTS"] = "cancelledpayments";
     FIREBASETABLE["VIDEORESOURCES"] = "videoresources";
     FIREBASETABLE["YOUTUBEAUTHS"] = "youtubeauths";
+    FIREBASETABLE["IDREQUESTS"] = "idrequests";
+    FIREBASETABLE["IDTEMPLATES"] = "idtemplates";
+    FIREBASETABLE["CHECKOUTS"] = "checkouts";
+    FIREBASETABLE["CHECKOUTACCOUNTS"] = "checkoutaccounts";
+    FIREBASETABLE["CUSTOMERS"] = "customers";
     // TRIGGERS
     FIREBASETABLE["SCHOOLBANKPROGRESS"] = "schoolbankprogress";
     FIREBASETABLE["TRANSACTIONNOTIFICATIONS"] = "transactionnotifications";
