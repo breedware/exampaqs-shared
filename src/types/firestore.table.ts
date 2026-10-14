@@ -72,6 +72,8 @@ export enum FIREBASETABLE {
   CHECKOUTS = 'checkouts',
   CHECKOUTACCOUNTS = 'checkoutaccounts',
   CUSTOMERS = 'customers',
+  ADMISSIONFORMS = 'admissionforms',
+  PAYMENTREFUNDS = 'paymentrefunds',
 
   // TRIGGERS
   SCHOOLBANKPROGRESS = 'schoolbankprogress',

@@ -70,6 +70,8 @@ export var FIREBASETABLE;
     FIREBASETABLE["CHECKOUTS"] = "checkouts";
     FIREBASETABLE["CHECKOUTACCOUNTS"] = "checkoutaccounts";
     FIREBASETABLE["CUSTOMERS"] = "customers";
+    FIREBASETABLE["ADMISSIONFORMS"] = "admissionforms";
+    FIREBASETABLE["PAYMENTREFUNDS"] = "paymentrefunds";
     // TRIGGERS
     FIREBASETABLE["SCHOOLBANKPROGRESS"] = "schoolbankprogress";
     FIREBASETABLE["TRANSACTIONNOTIFICATIONS"] = "transactionnotifications";

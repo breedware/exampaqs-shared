@@ -41,6 +41,25 @@ export var SuggestionStatus;
     SuggestionStatus["RESOLVED"] = "resolved";
     SuggestionStatus["REJECTED"] = "rejected";
 })(SuggestionStatus || (SuggestionStatus = {}));
+export var CHECKOUT_STATUS;
+(function (CHECKOUT_STATUS) {
+    CHECKOUT_STATUS["PENDING"] = "pending";
+    CHECKOUT_STATUS["PAID"] = "paid";
+    CHECKOUT_STATUS["CANCELLED"] = "cancelled";
+    CHECKOUT_STATUS["EXPIRED"] = "expired";
+})(CHECKOUT_STATUS || (CHECKOUT_STATUS = {}));
+export var REFUND_STATUS;
+(function (REFUND_STATUS) {
+    REFUND_STATUS["PENDING"] = "pending";
+    REFUND_STATUS["COMPLETED"] = "completed";
+    REFUND_STATUS["FAILED"] = "failed";
+})(REFUND_STATUS || (REFUND_STATUS = {}));
+export var TRANSFER_STATUS;
+(function (TRANSFER_STATUS) {
+    TRANSFER_STATUS["PENDING"] = "pending";
+    TRANSFER_STATUS["COMPLETED"] = "completed";
+    TRANSFER_STATUS["CANCELLED"] = "cancelled";
+})(TRANSFER_STATUS || (TRANSFER_STATUS = {}));
 export var TERM_STATUS;
 (function (TERM_STATUS) {
     TERM_STATUS["ACTIVE"] = "active";

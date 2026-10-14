@@ -466,6 +466,33 @@ export interface UnmarkedAttendance {
     }[]
 }
 
+export enum CHECKOUT_STATUS {
+    PENDING = 'pending',
+    PAID = 'paid',
+    CANCELLED = 'cancelled',
+    EXPIRED = 'expired'
+}
+
+export enum REFUND_STATUS {
+    PENDING = 'pending',
+    COMPLETED = 'completed',
+    FAILED = 'failed'
+}
+
+export enum TRANSFER_STATUS {
+    PENDING = 'pending',
+    COMPLETED = 'completed',
+    CANCELLED = 'cancelled'
+}
+
+export interface PaymentRefund {
+    reference?: string;
+    transactionReference: string;
+    schoolId?: number;
+    amount: number;
+    status: REFUND_STATUS;
+}
+
 export interface PaymentCheckout {
     reference?: string;
     date: string;
@@ -473,12 +500,14 @@ export interface PaymentCheckout {
     payload: Record<string, any>;
     purpose: PAYMENT_PURPOSE;
     email?: string;
+    status: CHECKOUT_STATUS;
     schoolId?: string;
     schoolName?: string;
     recipient?: {
         recipientCode: string;
         amount: number;
         transferReference: string;
+        schoolId: number;
     }[];
     schoolReference?: string;
 }
