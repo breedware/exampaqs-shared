@@ -437,7 +437,7 @@ export interface PaymentCheckout {
     amount: number;
     payload: Record<string, any>;
     purpose: PAYMENT_PURPOSE;
-    email?: string;
+    email: string;
     status: CHECKOUT_STATUS;
     schoolId?: string;
     schoolName?: string;
